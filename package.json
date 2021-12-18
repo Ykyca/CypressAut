@@ -1,0 +1,16 @@
+{
+  "name": "cypress-automation-framework",
+  "version": "1.0.0",
+  "description": "cypress automation framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ivana Radovanovic",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^4.12.1",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-xpath": "^1.6.2"
+  }
+}
