@@ -2,7 +2,7 @@
 
 describe("Iterate over elements", () => {
 
-    before(function() {
+    beforeEach(function() {
         cy.visit("https://automationteststore.com/");
         cy.get("a[href*='product/category&path=']").contains("Hair Care").click();
     })
@@ -18,7 +18,6 @@ describe("Iterate over elements", () => {
 
     })
 
-
     //iterate and click on an element based on text
     it("Add specific product to basket-selecting it from element iteration", () => {
 
@@ -26,8 +25,21 @@ describe("Iterate over elements", () => {
 
     })
 
+    it("Add Seaweed Conditioner to basket", () => {
+
+        cy.selectProduct('Seaweed Conditioner');
+
+    })
+
+    
+    it("Add Eau Parfumee au The Vert Shampoo to basket", () => {
+
+        cy.selectProduct('Eau Parfumee au The Vert Shampoo');
+
+    })
 
 
+    
 
 
 
